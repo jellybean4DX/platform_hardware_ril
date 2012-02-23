@@ -36,6 +36,10 @@ ifeq ($(TARGET_DEVICE),dream)
   LOCAL_CFLAGS += -DPOLL_CALL_STATE -DUSE_QMI
 endif
 
+ifeq ($(TARGET_DEVICE),droid2we)
+  LOCAL_CFLAGS += -DUSE_TI_COMMANDS
+endif
+
 ifeq (foo,foo)
   #build shared library
   LOCAL_SHARED_LIBRARIES += \
