@@ -534,11 +534,11 @@ dispatchSmsWrite (Parcel &p, RequestInfo *pRI) {
     args.pdu = strdupReadString(p);
 
     if (status != NO_ERROR ) {
-        ALOGE("dispatchSmsWrite: status= %d, args.status= %d", status, args.status);
+        LOGE("dispatchSmsWrite: status= %d, args.status= %d", status, args.status);
         goto invalid;
     }
     if( NULL == args.pdu ) {
-        ALOGE("dispatchSmsWrite: args.pdu is NULL");
+        LOGE("dispatchSmsWrite: args.pdu is NULL");
         goto invalid;
     }
 
