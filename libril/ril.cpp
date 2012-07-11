@@ -16,6 +16,7 @@
 */
 
 #define LOG_TAG "RILC"
+#define LOG_NDEBUG 0
 
 #include <hardware_legacy/power.h>
 
