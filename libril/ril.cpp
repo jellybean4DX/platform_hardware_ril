@@ -23,7 +23,6 @@
 #include <telephony/ril_cdma_sms.h>
 #include <cutils/sockets.h>
 #include <cutils/jstring.h>
-#include <cutils/Log.h>
 #include <cutils/record_stream.h>
 #include <utils/Log.h>
 #include <utils/SystemClock.h>
