@@ -16,10 +16,6 @@
 */
 
 #define LOG_TAG "RILC"
-#define LOGI__ android_log_print(ANDROID_LOG_INFO,LOG_TAG,__VA_ARGS)
-#define LOGE__ android_log_print(ANDROID_LOG_ERROR,LOG_TAG,__VA_ARGS)
-#define LOGD(...) android_log_print(ANDROID_LOG_DEBUG,LOG_TAG,__VA_ARGS)
-#define LOGW(...) android_log_print(ANDROID_LOG_WARN,LOG_TAG,__VA_ARGS)
 
 #include <hardware_legacy/power.h>
 
@@ -27,6 +23,7 @@
 #include <telephony/ril_cdma_sms.h>
 #include <cutils/sockets.h>
 #include <cutils/jstring.h>
+#include <cutils/Log.h>
 #include <cutils/record_stream.h>
 #include <utils/Log.h>
 #include <utils/SystemClock.h>
